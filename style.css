@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  z-index: 1;
+}
+
+#controls {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+#controls label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.buttons {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 1;
+}
+
+.buttons button {
+  margin-left: 5px;
+}
+
+#tooltip {
+  position: absolute;
+  padding: 6px 12px;
+  border-radius: 4px;
+  display: none;
+  z-index: 2;
+}
+
+canvas {
+  display: block;
+}
+
+/* Light & Dark Mode Styles */
+body.dark-mode {
+  background: black;
+  color: white;
+}
+body.light-mode {
+  background: #f0f0f0;
+  color: black;
+}
+body.dark-mode #controls {
+  background: rgba(0, 0, 0, 0.6);
+}
+body.light-mode #controls {
+  background: rgba(255, 255, 255, 0.7);
+}
+body.dark-mode #tooltip {
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
+}
+body.light-mode #tooltip {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
